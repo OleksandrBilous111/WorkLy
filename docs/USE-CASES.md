@@ -37,3 +37,50 @@ Then the system must prevent registration and display a message stating that the
 When the user clicks "Sign Up";
 
 Then the system must block the submission and highlight the missing fields as mandatory.
+
+## [UC-03] Identity Verification (Verification Level 3)
+
+### 1. Description
+**Actor:** Registered User (with verified phone number and 2FA enabled)
+
+**Goal:** To obtain full access to all application features and remove account restrictions by completing identity and liveness verification.
+
+### 2. Main Success Scenario (Happy Path)
+1. The User navigates to the Verification Panel and clicks the **"Verify"** button.
+2. The User selects the appropriate document type and uploads the required files.
+3. The System performs an automated validation of the document’s authenticity and data.
+4. Upon successful document validation, the System redirects the User to the Video Verification interface and provides instructions.
+5. The User completes the identity confirmation (Liveness Check), and the System redirects them to the Home Page.
+6. The System grants the User "Verified" status and unlocks all restricted features.
+
+### 3. Acceptance Criteria (AC)
+
+**[ ] AC 1: Security Prerequisites**
+Given the user has not confirmed their phone number or enabled Two-Factor Authentication (2FA);
+When the user attempts to start Level 3 verification;
+Then the system must block access and prompt the user to complete these security steps first.
+
+**[ ] AC 2: Sequential Flow Logic**
+Given the user has not completed Level 2 verification;
+When the user attempts to access Level 3;
+Then the system must automatically redirect the user to the Level 2 verification block.
+
+**[ ] AC 3: Document Validity and Age Check**
+Given the user uploads a document;
+When the system processes the data;
+Then it must verify that the document is valid (not expired) and that the user meets the minimum age requirement (18+).
+
+**[ ] AC 4: Liveness Check Trigger**
+Given the user is in the verification process;
+When the document validation stage is successfully passed;
+Then the system must immediately initiate the Video Verification interface.
+
+**[ ] AC 5: Fraud and Forgery Prevention**
+Given the user submits forged documents or attempts to deceive the system;
+When the fraud is detected;
+Then the system must automatically block the user's account and ban their MAC address.
+
+**[ ] AC 6: Minor User Handling**
+Given the system identifies the user as a minor (under 18) during the check;
+When the verification is processed;
+Then the system must redirect the user to a specialized "Minor Identity Confirmation" flow to assign appropriate restricted permissions.
