@@ -1,3 +1,20 @@
+• [UC-31] Withdraw Application
+• [UC-32] Real-time Status: "Heading There"
+• [UC-33] Secure In-App Messaging
+• [UC-34] Progress Photo Documentation
+• [UC-35] "Work Started" Trigger
+• [UC-36] "Task Completed" Declaration
+• [UC-37] Job Approval (Closure)
+• [UC-38] Revision Request (Rework)
+• [UC-39] Message Read Receipts
+• [UC-40] No-Response Alert (Inactivity)
+• [UC-41] Payment Method Integration
+• [UC-42] Escrow Fund Reservation (Secure Deal)
+• [UC-43] Performer Wallet Balance
+• [UC-44] Payout Request (Withdrawal)
+• [UC-45] Transaction History and Receipts
+
+
 ### [UC-31] Withdraw Application
 
 **1. Description**
