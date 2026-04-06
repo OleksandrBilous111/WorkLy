@@ -1,3 +1,24 @@
+# Use cases
+
+## Map
+  - [[UC-31] Withdraw Application](#uc-31-withdraw-application)
+  - [[UC-32] Real-time Status: "Heading There"](#uc-32-real-time-status-heading-there)
+  - [[UC-33] Secure In-App Messaging](#uc-33-secure-in-app-messaging)
+  - [[UC-34] Progress Photo Documentation](#uc-34-progress-photo-documentation)
+  - [[UC-35] "Work Started" Trigger](#uc-35-work-started-trigger)
+  - [[UC-36] "Task Completed" Declaration](#uc-36-task-completed-declaration)
+  - [[UC-37] Job Approval (Closure)](#uc-37-job-approval-closure)
+  - [[UC-38] Revision Request (Rework)](#uc-38-revision-request-rework)
+  - [[UC-39] Message Read Receipts](#uc-39-message-read-receipts)
+  - [[UC-40] No-Response Alert (Inactivity)](#uc-40-no-response-alert-inactivity)
+  - [[UC-41] Payment Method Integration](#uc-41-payment-method-integration)
+  - [[UC-42] Escrow Fund Reservation (Secure Deal)](#uc-42-escrow-fund-reservation-secure-deal)
+  - [[UC-43] Performer Wallet Balance](#uc-43-performer-wallet-balance)
+  - [[UC-44] Payout Request (Withdrawal)](#uc-44-payout-request-withdrawal)
+  - [[UC-45] Transaction History and Receipts](#uc-45-transaction-history-and-receipts)
+
+---
+
 ### [UC-31] Withdraw Application
 
 **1. Description**
